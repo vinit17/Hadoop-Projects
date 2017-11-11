@@ -1,0 +1,251 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/vparekh/11518202
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/vparekh/cometcluster...
+myHadoop: Backing up old config dir to /home/vparekh/cometcluster.1...
+`/home/vparekh/cometcluster' -> `/home/vparekh/cometcluster.1'
+myHadoop: Designating comet-26-67.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-26-67.ibnet
+comet-26-68.ibnet
+comet-26-72.ibnet
+17/10/04 13:39:17 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-26-67.sdsc.edu/198.202.117.189
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/vparekh/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+17/10/04 13:39:17 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+17/10/04 13:39:17 INFO namenode.NameNode: createNameNode [-format]
+17/10/04 13:39:17 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/04 13:39:17 WARN common.Util: Path /scratch/vparekh/11518202/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+17/10/04 13:39:17 WARN common.Util: Path /scratch/vparekh/11518202/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-40c65484-ae98-4888-991b-220bddca7821
+17/10/04 13:39:17 INFO namenode.FSNamesystem: No KeyProvider found.
+17/10/04 13:39:17 INFO namenode.FSNamesystem: fsLock is fair:true
+17/10/04 13:39:17 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+17/10/04 13:39:17 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: The block deletion will start around 2017 Oct 04 13:39:17
+17/10/04 13:39:17 INFO util.GSet: Computing capacity for map BlocksMap
+17/10/04 13:39:17 INFO util.GSet: VM type       = 64-bit
+17/10/04 13:39:17 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+17/10/04 13:39:17 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: defaultReplication         = 3
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: maxReplication             = 512
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: minReplication             = 1
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+17/10/04 13:39:17 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+17/10/04 13:39:17 INFO namenode.FSNamesystem: fsOwner             = vparekh (auth:SIMPLE)
+17/10/04 13:39:17 INFO namenode.FSNamesystem: supergroup          = supergroup
+17/10/04 13:39:17 INFO namenode.FSNamesystem: isPermissionEnabled = true
+17/10/04 13:39:17 INFO namenode.FSNamesystem: HA Enabled: false
+17/10/04 13:39:17 INFO namenode.FSNamesystem: Append Enabled: true
+17/10/04 13:39:17 INFO util.GSet: Computing capacity for map INodeMap
+17/10/04 13:39:17 INFO util.GSet: VM type       = 64-bit
+17/10/04 13:39:17 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+17/10/04 13:39:17 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+17/10/04 13:39:17 INFO namenode.NameNode: Caching file names occuring more than 10 times
+17/10/04 13:39:17 INFO util.GSet: Computing capacity for map cachedBlocks
+17/10/04 13:39:17 INFO util.GSet: VM type       = 64-bit
+17/10/04 13:39:17 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+17/10/04 13:39:17 INFO util.GSet: capacity      = 2^18 = 262144 entries
+17/10/04 13:39:17 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+17/10/04 13:39:17 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+17/10/04 13:39:17 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+17/10/04 13:39:17 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+17/10/04 13:39:17 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+17/10/04 13:39:17 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+17/10/04 13:39:17 INFO util.GSet: VM type       = 64-bit
+17/10/04 13:39:17 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+17/10/04 13:39:17 INFO util.GSet: capacity      = 2^15 = 32768 entries
+17/10/04 13:39:17 INFO namenode.NNConf: ACLs enabled? false
+17/10/04 13:39:17 INFO namenode.NNConf: XAttrs enabled? true
+17/10/04 13:39:17 INFO namenode.NNConf: Maximum size of an xattr: 16384
+17/10/04 13:39:17 INFO namenode.FSImage: Allocated new BlockPoolId: BP-518291292-198.202.117.189-1507149557633
+17/10/04 13:39:17 INFO common.Storage: Storage directory /scratch/vparekh/11518202/namenode_data has been successfully formatted.
+17/10/04 13:39:17 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+17/10/04 13:39:17 INFO util.ExitUtil: Exiting with status 0
+17/10/04 13:39:17 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-26-67.sdsc.edu/198.202.117.189
+************************************************************/
+17/10/04 13:39:18 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-26-67.ibnet]
+comet-26-67.ibnet: starting namenode, logging to /scratch/vparekh/11518202/logs/hadoop-vparekh-namenode-comet-26-67.sdsc.edu.out
+comet-26-67.ibnet: starting datanode, logging to /scratch/vparekh/11518202/logs/hadoop-vparekh-datanode-comet-26-67.sdsc.edu.out
+comet-26-68.ibnet: starting datanode, logging to /scratch/vparekh/11518202/logs/hadoop-vparekh-datanode-comet-26-68.sdsc.edu.out
+comet-26-72.ibnet: starting datanode, logging to /scratch/vparekh/11518202/logs/hadoop-vparekh-datanode-comet-26-72.sdsc.edu.out
+Starting secondary namenodes [comet-26-67.ibnet]
+comet-26-67.ibnet: starting secondarynamenode, logging to /scratch/vparekh/11518202/logs/hadoop-vparekh-secondarynamenode-comet-26-67.sdsc.edu.out
+17/10/04 13:39:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/vparekh/11518202/logs/yarn-vparekh-resourcemanager-comet-26-67.out
+comet-26-67.ibnet: starting nodemanager, logging to /scratch/vparekh/11518202/logs/yarn-vparekh-nodemanager-comet-26-67.sdsc.edu.out
+comet-26-68.ibnet: starting nodemanager, logging to /scratch/vparekh/11518202/logs/yarn-vparekh-nodemanager-comet-26-68.sdsc.edu.out
+comet-26-72.ibnet: starting nodemanager, logging to /scratch/vparekh/11518202/logs/yarn-vparekh-nodemanager-comet-26-72.sdsc.edu.out
+17/10/04 13:39:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/04 13:39:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/04 13:39:39 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/04 13:39:40 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/10/04 13:39:41 INFO client.RMProxy: Connecting to ResourceManager at comet-26-67.ibnet/10.22.249.68:8032
+17/10/04 13:39:41 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/10/04 13:39:41 INFO input.FileInputFormat: Total input paths to process : 1
+17/10/04 13:39:41 INFO input.FileInputFormat: Total input paths to process : 1
+17/10/04 13:39:41 INFO mapreduce.JobSubmitter: number of splits:2
+17/10/04 13:39:41 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1507149574656_0001
+17/10/04 13:39:42 INFO impl.YarnClientImpl: Submitted application application_1507149574656_0001
+17/10/04 13:39:42 INFO mapreduce.Job: The url to track the job: http://comet-26-67.ibnet:8088/proxy/application_1507149574656_0001/
+17/10/04 13:39:42 INFO mapreduce.Job: Running job: job_1507149574656_0001
+17/10/04 13:39:47 INFO mapreduce.Job: Job job_1507149574656_0001 running in uber mode : false
+17/10/04 13:39:47 INFO mapreduce.Job:  map 0% reduce 0%
+17/10/04 13:39:52 INFO mapreduce.Job:  map 100% reduce 0%
+17/10/04 13:39:57 INFO mapreduce.Job:  map 100% reduce 100%
+17/10/04 13:39:57 INFO mapreduce.Job: Job job_1507149574656_0001 completed successfully
+17/10/04 13:39:57 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=273774
+		FILE: Number of bytes written=866282
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=250041
+		HDFS: Number of bytes written=9374865
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4864
+		Total time spent by all reduces in occupied slots (ms)=2402
+		Total time spent by all map tasks (ms)=4864
+		Total time spent by all reduce tasks (ms)=2402
+		Total vcore-seconds taken by all map tasks=4864
+		Total vcore-seconds taken by all reduce tasks=2402
+		Total megabyte-seconds taken by all map tasks=4980736
+		Total megabyte-seconds taken by all reduce tasks=2459648
+	Map-Reduce Framework
+		Map input records=12444
+		Map output records=12444
+		Map output bytes=248880
+		Map output materialized bytes=273780
+		Input split bytes=540
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=100
+		Reduce shuffle bytes=273780
+		Reduce input records=12444
+		Reduce output records=372076
+		Spilled Records=24888
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=149
+		CPU time spent (ms)=4430
+		Physical memory (bytes) snapshot=751845376
+		Virtual memory (bytes) snapshot=6507524096
+		Total committed heap usage (bytes)=537919488
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=9374865
+17/10/04 13:39:57 INFO client.RMProxy: Connecting to ResourceManager at comet-26-67.ibnet/10.22.249.68:8032
+17/10/04 13:39:57 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/10/04 13:39:57 INFO input.FileInputFormat: Total input paths to process : 1
+17/10/04 13:39:57 INFO mapreduce.JobSubmitter: number of splits:1
+17/10/04 13:39:57 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1507149574656_0002
+17/10/04 13:39:57 INFO impl.YarnClientImpl: Submitted application application_1507149574656_0002
+17/10/04 13:39:57 INFO mapreduce.Job: The url to track the job: http://comet-26-67.ibnet:8088/proxy/application_1507149574656_0002/
+17/10/04 13:39:57 INFO mapreduce.Job: Running job: job_1507149574656_0002
+17/10/04 13:40:01 INFO mapreduce.Job: Job job_1507149574656_0002 running in uber mode : false
+17/10/04 13:40:01 INFO mapreduce.Job:  map 0% reduce 0%
+17/10/04 13:40:09 INFO mapreduce.Job:  map 100% reduce 0%
+17/10/04 13:40:14 INFO mapreduce.Job:  map 100% reduce 100%
+17/10/04 13:40:14 INFO mapreduce.Job: Job job_1507149574656_0002 completed successfully
+17/10/04 13:40:14 INFO mapreduce.Job: Counters: 49
+	File System Counters
+		FILE: Number of bytes read=6697374
+		FILE: Number of bytes written=13606645
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=9374999
+		HDFS: Number of bytes written=1523601
+		HDFS: Number of read operations=6
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=5448
+		Total time spent by all reduces in occupied slots (ms)=2464
+		Total time spent by all map tasks (ms)=5448
+		Total time spent by all reduce tasks (ms)=2464
+		Total vcore-seconds taken by all map tasks=5448
+		Total vcore-seconds taken by all reduce tasks=2464
+		Total megabyte-seconds taken by all map tasks=5578752
+		Total megabyte-seconds taken by all reduce tasks=2523136
+	Map-Reduce Framework
+		Map input records=372076
+		Map output records=372076
+		Map output bytes=5953216
+		Map output materialized bytes=6697374
+		Input split bytes=134
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=59889
+		Reduce shuffle bytes=6697374
+		Reduce input records=372076
+		Reduce output records=59889
+		Spilled Records=744152
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=99
+		CPU time spent (ms)=8140
+		Physical memory (bytes) snapshot=486363136
+		Virtual memory (bytes) snapshot=4348350464
+		Total committed heap usage (bytes)=341835776
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=9374865
+	File Output Format Counters 
+		Bytes Written=1523601
+17/10/04 13:40:15 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+stopping yarn daemons
+stopping resourcemanager
+comet-26-67.ibnet: stopping nodemanager
+comet-26-68.ibnet: stopping nodemanager
+comet-26-68.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-26-72.ibnet: stopping nodemanager
+comet-26-72.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+17/10/04 13:40:26 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-26-67.ibnet]
+comet-26-67.ibnet: stopping namenode
